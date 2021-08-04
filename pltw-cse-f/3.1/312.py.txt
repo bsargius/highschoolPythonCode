@@ -1,0 +1,27 @@
+mysteryVariable = type("Hello World!")
+print mysteryVariable
+
+student_count = int (2.17)
+introduction_question = "What is your name?"
+truth = (0+1+0)
+print (student_count)
+print (introduction_question)
+print (bool(truth))
+
+print (type("1"))
+print (type(-10))
+print (type(False))
+print (type ("False"))
+print (type(3.14))
+
+x = raw_input ("What is your name?:")
+print ("Hello " + x)
+
+x = input ("What is your name?: ")
+print ("Hello " + x)
+
+y = raw_input ("Bishoy")
+print ("Hello " + y)
+
+y = input ("Bishoy")
+print ("Hello " + y)

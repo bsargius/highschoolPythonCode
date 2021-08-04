@@ -1,0 +1,7 @@
+def multi(x):
+    return x * 3.4
+    
+number = input("Please enter a number: ")
+print "The answer is", multi(number)
+number = input("Please enter a number: ")
+print "The answer is", multi(number)

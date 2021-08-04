@@ -1,0 +1,106 @@
+#Count numbers from 0 - 4
+for x in range(5):
+    print x
+
+
+
+#Count numbers from 1 - 5
+for x in range(1,6):
+    print x
+    
+    
+    
+#Count numbers down from 5 - 0
+for x in range(5, 0, -1):
+    print x
+    
+    
+    
+#Count up by odd  
+for x in range(1,10,2):
+    print x
+    
+    
+    
+#Count up by even
+for x in range(2,10,2):
+    print x
+    
+    
+    
+#Adding up Numbers
+total = 0
+for x in range(1, 6):
+    total = total + x
+print total
+
+
+
+#Multiplying Up Numbers
+product = 1
+for x in range(1, 6):
+    product = product * x
+print product
+
+
+
+print "\n"
+
+for x in range(1,6):
+    print x
+    
+print "\n"
+
+for x in range(5,0,-1):
+    print x
+    
+print "\n"
+
+for x in range(0,110,10):
+    print x
+    
+print "\n"
+
+for x in range(1,8,2):
+    print x
+    
+print "\n"
+
+for x in range(2,11,2):
+    print x
+    
+print "\n"
+
+for x in range(-6,7,3):
+    print x
+    
+print "\n"
+
+sum = 0
+for x in range(1,101):
+    sum = sum + x
+    print sum
+    
+print "\n"
+
+for x in range(0,1001,100):
+    print x
+    
+print "\n"
+
+produce = 1
+for x in range(1,6):
+    produce = produce * x
+print produce
+
+print "\n"
+
+for x in range(1,8,2):
+    print x
+    
+print "\n"
+
+sum1 = 1
+for x in range(1,6,2):
+    sum1 = x * sum1
+    print sum1

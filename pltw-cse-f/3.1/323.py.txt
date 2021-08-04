@@ -1,0 +1,6 @@
+x = 0
+my_list = [0,1,2]
+for number in my_list:
+    x = x + number
+    
+print x

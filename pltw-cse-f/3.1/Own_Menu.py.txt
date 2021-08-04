@@ -1,0 +1,159 @@
+#Variable
+cost = 0.0
+order = []
+
+#Console type selection
+print "What type game console do you want?"
+print "1. PC"
+print "2. PS4"
+print "3. Xbox One"
+console = input("Enter Choice: ")
+
+if console == 1:
+    cost = 1500.00
+    print "You picked a PC."
+    order.append("PC")
+elif console == 2:
+    cost = 293.00
+    print "You picked a PS4."
+    order.append("PS4")
+elif console == 3:
+    cost = 209.90
+    print "You picked a Xbox One."
+    order.append("Xbox One")
+else:
+    print "Invalid Choice."
+
+
+
+
+
+
+
+#Game Selection
+print "What game do you want?"
+print "1. Borderlands 2"
+print "2. Pokemon"
+print "3. Call of Duty"
+print "4. I don't want a game."
+game = input("Enter choice: ")
+
+if game == 1:
+    cost = cost + 20.00
+    print "You ordered Borderlands 2."
+    order.append("Borderlands 2")
+elif game == 2:
+    cost = cost + 40.00
+    print "You ordered Pokemon."
+    order.append("Pokemon")
+elif game == 3:
+    cost = cost + 14.00
+    print "You ordered Call of Duty."
+    order.append("Call of Duty")
+elif game == 4:
+    cost = cost + 0.00
+    print "You did not order a game."
+    order.append("none")
+else:
+    print "Invalid Choice."
+
+
+
+
+
+
+
+
+#Game Edition Selection
+print "What game edition do you want?"
+print "1. Standard Edition"
+print "2. Deluxe Edition"
+print "3. Bethesda Edition"
+print "4. I don't want a game."
+edition = input("Enter choice: ")
+
+if edition == 1:
+    cost = cost + 0.00
+    print "You ordered Standard Edition."
+    order.append("Standard Edition")
+elif edition == 2:
+    cost = cost + 20.00
+    print "You ordered Deluxe Edition."
+    order.append("Deluxe Edition")
+elif edition == 3:
+    cost = cost + 40.00
+    print "You ordered Bethesda Edition."
+    order.append("Bethesda Edition")
+elif edition == 4:
+    cost = cost + 0.00
+    print "You did not order a game."
+else:
+    print "Invalid Choice."
+
+
+
+
+
+
+
+
+
+#Game accessories Selection
+print "What accessories do you want?"
+print "1. Controller Grip"
+print "2. VR Headset"
+print "3. Headphones"
+accessories = input("Enter choice: ")
+
+if accessories == 1:
+    cost = cost + 10.00
+    order.append("controller grip")
+    print "You ordered a controller grip. Would you like to get a charging dock as well?"
+    print "1. Yes"
+    print "2. No"
+    dock = input("Enter choice: ")
+    if dock == 1:
+        print "You've ordered a charging dock as well."
+        cost == cost + 25.00
+        order.append("and a charging dock")
+    elif dock == 2:
+        print "You've not ordered a charging dock as well."
+        order.append("and no charging dock")
+elif accessories ==2:
+    cost = cost + 150.00
+    print "You odered VR Headset."
+    order.append("VR Headset")
+elif accessories == 3:
+    cost = cost + 80.00
+    print "You ordered a pair of headphones."
+    order.append("pair of headphones")
+else:
+    print "Invalid Choice."
+    
+    
+    
+    
+    
+    
+    
+    
+    
+#Number of controllers
+print "How many controllers do you want?"
+controllers = input("Enter choice: ")
+
+if controllers == controllers:
+    cost = controllers * 60.25 + cost
+    print "You ordered some controllers."
+    order.append("controllers")
+else:
+    print "Invalid Choice."
+
+
+
+
+
+
+
+print "You ordered a", order [0], "bundled with", order [1], order [2], "with a", order [3], "and", order [4], "!"
+print "The total cost for your order is ${0:.2f}" .format(cost)

@@ -1,0 +1,16 @@
+#ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+x = 4
+print x
+
+y = 4.7
+print "Number:", y
+
+z = "Mr.Nelson"
+print "My name is", z, "!"
+
+a = True
+print a
+
+b = 7 > 10
+print b
+

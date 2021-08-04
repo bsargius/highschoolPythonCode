@@ -1,0 +1,66 @@
+#Import Library
+import math
+
+#Terminal Question
+print "What operation do you want to use?"
+print "1. Addition"
+print "2. Subtraction"
+print "3. Multiplication"
+print "4. Division"
+print "5. Modulus (Find Remainder)"
+print "6. Absolute Value"
+print "7. Square Root"
+print "8. Quadratic Equation"
+print "9. Custom Equation"
+operation = input("Enter Choice: ")
+
+#Operations code
+#Addition
+if operation == 1:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    z = x + y
+    print z
+
+#Subtraction
+elif operation == 2:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    z = x - y
+    print z
+
+#Multiplication
+elif operation == 3:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    z = x * y
+    print z
+    
+#Division
+elif operation == 4:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    z = x / y
+    print z
+
+#Modulus
+elif operation == 5:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    z = x % y
+    print z
+    
+#Absolute Value
+elif operation == 6:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    z = abs(x)
+    print z
+
+#Square Root
+elif operation == 7:
+    x = input("Enter X: ")
+    y = input("Enter Y: ")
+    if x > 0:
+        z = math.sqrt(x)
+        print z

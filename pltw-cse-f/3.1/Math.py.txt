@@ -1,0 +1,46 @@
+import math
+
+#Define Variables
+x = 5
+y = 2
+
+#Addition
+z = x + y
+print z
+
+#Subtraction
+z = x - y
+print z
+
+#Multiplication
+z = x * y
+print z
+
+#Division
+z = x / y
+print z
+
+#Modulus which means finding the remainder
+z = x % y
+print z
+
+#Absolute Value
+z = abs(x)
+print z
+
+#Square Roots Method 1
+if x > 0:
+    z = math.sqrt(x)
+    print z
+
+#Square Roots Method 2
+z = x ** 2
+print z
+
+#Square Roots Method 3
+z = x ** y
+print z
+
+#PEMDAS Example
+z = (x + y) * 3
+print z

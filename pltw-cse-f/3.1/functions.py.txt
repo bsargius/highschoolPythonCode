@@ -1,0 +1,12 @@
+def print_info():
+    print "Mr.Nelson"
+    print "1234 Milford St"
+    print "Milford, MA 01757"
+
+def do_calc(x,y):
+    return (x + y) / 2
+
+    
+print_info()
+print_info()
+print "The average is ", do_calc(3.3,5.6)

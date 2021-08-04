@@ -1,0 +1,6 @@
+print "_____________"
+print "|           |"
+print "|           |"
+print "|           |"
+print "|           |"
+print "|___________|"

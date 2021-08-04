@@ -1,0 +1,48 @@
+cost = 0.0
+order = []
+
+print "What size ice cream do you want?"
+print "1. Small"
+print "2. Medium"
+print "3. Large"
+size = input("Enter Choice: ")
+
+if size == 1:
+    cost = 2.50
+    print "Your size is small."
+    order.append("small")
+elif size == 2:
+    cost = 3.00
+    print "Your size is medium."
+    order.append("medium")
+elif size == 3:
+    cost = 4.00
+    print "Your size is large."
+    order.append("large")
+else:
+    print "Invalid Choice."
+
+
+print "What type of sprinkles do you want?"
+print "1. Chocolate"
+print "2. Rainbow"
+print "3. I don't want any"
+sprinkles = input("Enter choice: ")
+
+if sprinkles == 1:
+    cost = cost + 0.25
+    print "You ordered chocolate sprinkles."
+    order.append("chocolate")
+elif sprinkles ==2:
+    cost = cost + 0.25
+    print "You odered rainbow sprinkles."
+    order.append("rainbow")
+elif sprinkles ==3:
+    cost = cost + 0
+    print "You did not order sprinkles."
+    order.append("no")
+else:
+    print "Invalid Choice."
+    
+print "You ordered a", order [0], "ice cream with", order [1], "sprinkles"
+print "The total cost for your ice cream is ${0:.2f}" .format(cost)

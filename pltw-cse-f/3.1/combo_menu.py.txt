@@ -1,0 +1,92 @@
+#Variable
+cost = 0.0
+
+#Sandwhich type selection
+print "What type of sandwhich do you want?"
+print "1. Chicken"
+print "2. Beef"
+print "3. Tofu"
+meat = input("Enter Choice: ")
+
+if meat == 1:
+    cost = 5.25
+    print "You picked a chicken sandwhich."
+elif meat == 2:
+    cost = 6.25
+    print "You picked a beef sandwhich."
+elif meat == 3:
+    cost = 5.75
+    print "You picked a tofu sandwhich."
+else:
+    print "Invalid Choice."
+
+
+#Drink type selection
+print "What size drink do you want?"
+print "1. Small"
+print "2. Medieum"
+print "3. Large"
+print "4. I don't want a drink."
+size = input("Enter choice: ")
+
+if size == 1:
+    cost = cost + 1.00
+    print "You ordered a samll drink."
+elif size ==2:
+    cost = cost + 1.75
+    print "You odered medieum drink."
+elif size == 3:
+    cost = cost + 2.25
+    print "You ordered a large drink."
+elif size ==4:
+    cost = cost + 0.00
+    print "You did not order a drink."
+else:
+    print "Invalid Choice."
+
+
+#Fries Size Selection
+print "What size fries do you want?"
+print "1. Small"
+print "2. Medieum"
+print "3. Large"
+print "4. I don't want fries."
+size = input("Enter choice: ")
+
+if size == 1:
+    cost = cost + 1.00
+    print "You ordered a small fries. Would you also like to mega size your fries?"
+    print "1. Yes"
+    print "2. No"
+    supersize = input("Enter choice: ")
+    if supersize == 1:
+        print "you've ordered supersize fries."
+        cost == cost + 1.00
+    elif supersize == 2:
+        print "You've not ordered supersize fries."
+elif size ==2:
+    cost = cost + 1.50
+    print "You odered medieum fries."
+elif size == 3:
+    cost = cost + 2.00
+    print "You ordered a large fries."
+elif size ==4:
+    cost = cost + 0.00
+    print "You did not order fries."
+else:
+    print "Invalid Choice."
+    
+#Number of ketchup
+print "How many packets of ketchup do you want?"
+ketchup = input("Enter choice: ")
+
+if ketchup == 1:
+    cost = cost + 0.25
+    print "You ordered a samll drink."
+elif ketchup ==0:
+    cost = cost + 0
+else:
+    print "Invalid Choice."
+
+
+print "The total cost for your meal is ${0:.2f}" .format(cost)

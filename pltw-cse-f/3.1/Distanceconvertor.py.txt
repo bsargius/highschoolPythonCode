@@ -1,0 +1,37 @@
+def calc_foot(x):
+    return x / 12
+    
+def calc_yard(x):
+    return x / 36
+
+def calc_meter(x):
+    return x / 39.37
+
+def calc_mile(x):
+    return x / 63360
+
+def calc_kilometer(x):
+    return x / 39370.079
+    
+print "1.Foot"
+print "2.Yard"
+print "3.Meter"
+print "4.Mile"
+print "5.Kilometer"
+unit = input("Please choose a unit of measurment: ")
+
+if unit ==1:
+    number = input("Please choose a number")
+    print "The answer is", calc_foot(number), " feet"
+elif unit ==2:
+    number = input("Please choose a number")
+    print "The answer is", calc_yard(number), " yards"
+elif unit ==3:
+    number = input("Please choose a number")
+    print "The answer is", calc_meter(number), " meters"
+elif unit ==4:
+    number = input("Please choose a number")
+    print "The answer is", calc_mile(number), " miles"
+elif unit ==5:
+    number = input("Please choose a number")
+    print "The answer is", calc_kilometer(number), " kilometer"

@@ -1,0 +1,5 @@
+cars = ["Civiic", "Tesla", "Accord"]
+print cars [0]
+print cars [2]
+cars.append("Ford")
+print cars [3]
